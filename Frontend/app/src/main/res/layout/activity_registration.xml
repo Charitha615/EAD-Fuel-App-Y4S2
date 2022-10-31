@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/subMerchantContactTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Welcome,"
+        android:textColor="@color/main_color"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/subMerchantContactTopic2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Sign up to continue!"
+        android:textColor="#7F8081"
+        android:textSize="24sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerUsernameInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Username"
+        app:endIconMode="clear_text"
+        app:helperTextEnabled="false"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:startIconTint="@color/main_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rUsernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerEmailInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Email Address"
+        app:endIconMode="clear_text"
+        app:helperTextEnabled="false"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        app:startIconTint="@color/main_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerPasswordInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Password"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/main_color">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerVehicleTypeInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Vehicle Type"
+        app:startIconDrawable="@drawable/ic_baseline_directions_car_24"
+        app:startIconTint="@color/main_color"
+
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/rVehicleTypeInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/registerErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="13sp" />
+
+
+    <Button
+        android:id="@+id/signUpBt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:backgroundTint="@color/main_color"
+        android:text="Sign Up" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signInLinkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="118dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Already Registered,"
+            android:textColor="#2a0e45"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/signInLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:minHeight="48dp"
+            android:onClick="linkOnClick"
+            android:text=" Sing In"
+            android:textColor="#4DCEFA"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

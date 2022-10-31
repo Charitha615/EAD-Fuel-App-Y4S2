@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".IndexPage">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dev Index Page"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*This will be removed after navigation is properly implemented."
+        android:textColor="@color/red"
+        android:textSize="17sp"
+        android:textStyle="italic|bold"
+        android:paddingStart="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/loginDev"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="User Login" />
+
+    <Button
+        android:id="@+id/registrationDev"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="User Registration" />
+
+    <Button
+        android:id="@+id/stationDetailsButtonDev"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Station Details Page" />
+
+    <Button
+        android:id="@+id/stationListButtonDev"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Station List" />
+
+    <Button
+        android:id="@+id/stationDetailsRequestDev"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Station Details Request" />
+
+    <Button
+        android:id="@+id/createFuelRequestDev"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Create Fuel Request" />
+
+    <Button
+        android:id="@+id/fuelRequestsDev"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Fuel requests" />
+
+    <Button
+        android:id="@+id/queueListDev"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Queue List" />
+
+    <Button
+        android:id="@+id/updateFuelStationDev"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Update Fuel Station" />
+
+    <Button
+        android:id="@+id/fuelStationOwnerListDev"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Station list owner" />
+</androidx.appcompat.widget.LinearLayoutCompat>

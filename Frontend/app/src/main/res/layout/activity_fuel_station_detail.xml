@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FuelStationDetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:cardBackgroundColor="#FFFFFF"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:id="@+id/fuelStationNameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <LinearLayout
+                android:id="@+id/fuelStationContainer"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fuel Station"
+                    android:textColor="#020202"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fuelStationNameDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IOC Fuel Station - Rathmalana"
+                    android:textColor="#020202"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#919191"/>
+            <LinearLayout
+                android:id="@+id/fuelStaionStartingTimeContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service Start At"
+                    android:textColor="#020202"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/startTimeDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2022/10/29,  7AM"
+                    android:textColor="#020202"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#919191"/>
+            <LinearLayout
+                android:id="@+id/fuelStationEndingTimeContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service Ends At"
+                    android:textColor="#020202"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/endTimeDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2022/10/19, 12PM"
+                    android:textColor="#020202"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#919191"/>
+            <LinearLayout
+                android:id="@+id/fuelStationFuelType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fuel Type"
+                    android:textColor="#020202"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fuelTypeDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Petrol 95 OCT"
+                    android:textColor="#020202"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#919191"/>
+            <LinearLayout
+                android:id="@+id/noOfVehiclesInQueueContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicles in the Queue"
+                    android:textColor="#020202"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/noOfVehiclesInQueueDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textColor="#020202"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/enrollButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:onClick="onClickEnroll"
+            android:text="Enroll" />
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/red"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:onClick="exitOnClick"
+            android:text="Exit" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
